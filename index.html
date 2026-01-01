@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="lilac">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio website." />
-  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Swam Htet Wint Yee - Computer Engineering portfolio" />
+  <title>Swam Htet Wint Yee | Portfolio</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -15,7 +16,7 @@
     <div class="container topbar__row">
       <a class="brand" href="#top" aria-label="Home">
         <span class="brand__dot" aria-hidden="true"></span>
-        <span class="brand__text">Your Name</span>
+        <span class="brand__text">Swam</span>
       </a>
 
       <button class="navbtn" id="navbtn" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
@@ -25,7 +26,7 @@
       </button>
 
       <nav class="nav" id="nav">
-        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#education">Education</a>
         <a class="nav__link" href="#skills">Skills</a>
         <a class="nav__link" href="#projects">Projects</a>
         <a class="nav__link" href="#experience">Experience</a>
@@ -35,12 +36,19 @@
           <label class="select" aria-label="Theme">
             <span class="select__label">Theme</span>
             <select id="themeSelect">
-              <option value="lavender">Lavender</option>
-              <option value="african-violet">African violet</option>
-              <option value="tea-rose">Tea rose</option>
-              <option value="melon">Melon</option>
+              <option value="lilac">Lilac</option>
+              <option value="grey">Grey</option>
             </select>
           </label>
+
+          <a class="iconbtn"
+             href="https://www.linkedin.com/in/swam-htet-wint-yee-66b14a299/"
+             target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.036-1.852-3.036-1.853 0-2.136 1.445-2.136 2.939v5.666H9.084V9h3.112v1.561h.045c.434-.822 1.494-1.689 3.074-1.689 3.29 0 3.896 2.164 3.896 4.977v6.603zM5.337 7.433a1.804 1.804 0 1 1 0-3.607 1.804 1.804 0 0 1 0 3.607zM6.956 20.452H3.719V9h3.237v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+
           <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
         </div>
       </nav>
@@ -48,261 +56,269 @@
   </header>
 
   <main id="main">
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__copy reveal">
-          <p class="eyebrow">Computer Engineering</p>
+          <p class="eyebrow">Computer Engineering student</p>
+
           <h1 class="hero__title">
-            Building practical systems that connect hardware, software, and data.
+            Swam Htet Wint Yee
           </h1>
+
           <p class="hero__sub">
-            Focus areas: embedded systems, IoT, automation, applied AI, and data dashboards.
+            I am a Computer Engineering student who is passionate about software development and solving technical challenges.
+            Using my knowledge and skills, I am dedicated to contribute to the advancement of innovative technologies.
           </p>
 
           <div class="hero__cta">
             <a class="btn btn--primary" href="#projects">View projects</a>
-            <a class="btn" href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn" href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
           </div>
 
           <div class="hero__meta">
             <div class="pill">Singapore</div>
-            <div class="pill">C/C++, Python, SQL, VBA</div>
-            <div class="pill">Tableau, Web, IoT</div>
+            <div class="pill">Java · Python · C</div>
+            <div class="pill">HTML/CSS/JS · Tableau</div>
           </div>
         </div>
 
-        <div class="hero__card reveal">
-          <div class="card">
-            <div class="card__header">
-              <div class="card__icon" aria-hidden="true">▢</div>
-              <div>
-                <div class="card__title">Featured project</div>
-                <div class="card__subtitle">Smart Aqua Grow</div>
+        <div class="hero__profile reveal">
+          <div class="profilecard">
+            <img class="profilecard__img" src="assets/profile.jpg" alt="Portrait photo of Swam" />
+            <div class="profilecard__info">
+              <div class="profilecard__name">Swam Htet Wint Yee</div>
+              <div class="profilecard__role">Diploma in Computer Engineering</div>
+              <div class="profilecard__links">
+                <a class="link" href="https://www.linkedin.com/in/swam-htet-wint-yee-66b14a299/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <span class="sep" aria-hidden="true">•</span>
+                <a class="link" href="mailto:swamhtetwintyee@gmail.com">Email</a>
               </div>
             </div>
-            <p class="card__text">
-              A monitoring + AI pipeline that turns sensor data and plant images into a dashboard, readiness signals, and alerts.
-            </p>
-            <ul class="tags" aria-label="Tech stack">
-              <li>ESP32-CAM</li>
-              <li>IoT</li>
-              <li>Python</li>
-              <li>PHP/MySQL</li>
-            </ul>
-            <div class="card__actions">
-              <a class="link" href="#projects">See details</a>
-              <a class="link" href="https://github.com/your-username" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+
+          <div class="minirow">
+            <div class="minicard">
+              <div class="minicard__k">Award</div>
+              <div class="minicard__v">Director’s List (2024)</div>
+            </div>
+            <div class="minicard">
+              <div class="minicard__k">Graduation</div>
+              <div class="minicard__v">May 2026</div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="hero__bg" aria-hidden="true"></div>
     </section>
 
-    <section class="section" id="about">
+    <!-- EDUCATION -->
+    <section class="section" id="education">
       <div class="container">
         <div class="section__head reveal">
-          <h2>About</h2>
-          <p class="muted">
-            Short and specific is best. Mention what you enjoy building and what roles you are aiming for.
-          </p>
+          <h2>Education</h2>
+          <p class="muted">Current programme and expected graduation.</p>
         </div>
 
-        <div class="two-col">
-          <div class="panel reveal">
-            <h3>What I do</h3>
-            <p class="muted">
-              I like building end-to-end systems: collecting real data, processing it, and turning it into something useful (dashboards, automation, or device behavior).
-            </p>
-            <p class="muted">
-              I’m currently looking for opportunities in embedded systems, IoT, automation, or applied AI.
-            </p>
+        <div class="panel reveal">
+          <div class="row">
+            <div>
+              <div class="title">Temasek Polytechnic</div>
+              <div class="muted">Diploma in Computer Engineering</div>
+            </div>
+            <div class="right muted">2023 – Present (Graduating May 2026)</div>
           </div>
-
-          <div class="panel reveal">
-            <h3>Highlights</h3>
-            <ul class="list">
-              <li>Firmware and program validation experience (internship)</li>
-              <li>Automation work in Excel VBA (data extraction, charts, tooling)</li>
-              <li>IoT + data dashboards with real sensors and structured pipelines</li>
-            </ul>
+          <div class="chips">
+            <span class="chip2">Artificial Intelligence & Machine Learning</span>
+            <span class="chip2">Internet of Things</span>
+            <span class="chip2">Intelligent Automation (UiPath)</span>
+            <span class="chip2">Microcontroller Application (C)</span>
+            <span class="chip2">Object-Oriented Programming (Java)</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section class="section section--alt" id="skills">
       <div class="container">
         <div class="section__head reveal">
           <h2>Skills</h2>
-          <p class="muted">Grouped skills look more professional than a long list.</p>
+          <p class="muted">Technical skills + work habits recruiters care about.</p>
         </div>
 
         <div class="grid">
           <div class="skillcard reveal">
-            <h3>Embedded / IoT</h3>
+            <h3>Programming</h3>
             <ul class="list">
-              <li>Microcontrollers, sensors, device testing</li>
-              <li>MQTT / HTTP data flow</li>
-              <li>Firmware flashing and troubleshooting</li>
+              <li>Java, Python, C</li>
+              <li>Problem-solving and critical thinking</li>
             </ul>
           </div>
 
           <div class="skillcard reveal">
-            <h3>Software</h3>
+            <h3>Web</h3>
             <ul class="list">
-              <li>C / C++ fundamentals</li>
-              <li>Python automation and AI pipelines</li>
-              <li>Basic web (HTML/CSS/JS, PHP)</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Building clean, responsive pages</li>
             </ul>
           </div>
 
           <div class="skillcard reveal">
-            <h3>Data</h3>
+            <h3>Data / Automation</h3>
             <ul class="list">
-              <li>SQL querying and analysis</li>
-              <li>Tableau dashboards</li>
-              <li>Excel VBA automation</li>
+              <li>Data visualization (KNIME, Tableau)</li>
+              <li>Intelligent Automation (UiPath)</li>
+            </ul>
+          </div>
+
+          <div class="skillcard reveal">
+            <h3>Embedded / Electronics</h3>
+            <ul class="list">
+              <li>Electronics and microcontroller</li>
+              <li>Hardware-software integration</li>
+            </ul>
+          </div>
+
+          <div class="skillcard reveal">
+            <h3>Soft skills</h3>
+            <ul class="list">
+              <li>Team collaboration</li>
+              <li>Attention to detail</li>
+            </ul>
+          </div>
+
+          <div class="skillcard reveal">
+            <h3>Focus areas</h3>
+            <ul class="list">
+              <li>Artificial intelligence & machine learning</li>
+              <li>Internet of things</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section__head reveal">
           <h2>Projects</h2>
-          <p class="muted">
-            Keep 3–6 strong projects. Each card should show problem, what you built, tech, and results.
-          </p>
+          <p class="muted">Add photos/screenshots for each project. These can be updated anytime.</p>
         </div>
 
-        <div class="filters reveal" role="tablist" aria-label="Project filters">
-          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="chip" data-filter="iot" role="tab" aria-selected="false">IoT</button>
-          <button class="chip" data-filter="automation" role="tab" aria-selected="false">Automation</button>
-          <button class="chip" data-filter="ai" role="tab" aria-selected="false">AI / Data</button>
+        <div class="cards">
+          <article class="proj reveal">
+            <img class="proj__img" src="assets/projects/traffic-light.jpg" alt="Traffic Light System project preview" />
+            <div class="proj__body">
+              <div class="proj__top">
+                <h3>Traffic Light System</h3>
+                <div class="mini">2024 · C · Microcontroller</div>
+              </div>
+              <ul class="list">
+                <li>Designed and programmed a traffic light system using C to create traffic scenarios.</li>
+                <li>Improved understanding of microcontroller-based systems and hardware-software integration.</li>
+              </ul>
+              <div class="proj__links">
+                <a class="link" href="#">Repo (add link)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj reveal">
+            <img class="proj__img" src="assets/projects/billing.jpg" alt="Utility Billing System project preview" />
+            <div class="proj__body">
+              <div class="proj__top">
+                <h3>Utility Billing System</h3>
+                <div class="mini">2024 · Java · OOP</div>
+              </div>
+              <ul class="list">
+                <li>Created a Java-based utility billing system to manage customer records and calculate billing amounts.</li>
+                <li>Built a functional, user-friendly application with consistent billing calculations.</li>
+              </ul>
+              <div class="proj__links">
+                <a class="link" href="#">Repo (add link)</a>
+              </div>
+            </div>
+          </article>
         </div>
 
-        <div class="cards" id="projectCards">
-          <article class="proj reveal" data-tags="iot ai">
-            <div class="proj__top">
-              <h3>Smart Aqua Grow</h3>
-              <div class="mini">IoT + AI dashboard</div>
-            </div>
-            <p class="muted">
-              Built a pipeline that links sensor readings and plant images to a web dashboard, readiness signals, and alerts.
-            </p>
-            <ul class="tags">
-              <li>ESP32-CAM</li><li>Python</li><li>PHP/MySQL</li><li>LoRa</li>
-            </ul>
-            <div class="proj__links">
-              <a class="link" href="#">Case study</a>
-              <a class="link" href="#">Repo</a>
-            </div>
-          </article>
-
-          <article class="proj reveal" data-tags="automation ai">
-            <div class="proj__top">
-              <h3>Excel VBA extraction + chart generator</h3>
-              <div class="mini">Automation</div>
-            </div>
-            <p class="muted">
-              Automated tool data parsing, transposing, timestamp conversion, tool-ID lookup, and dynamic chart generation.
-            </p>
-            <ul class="tags">
-              <li>Excel VBA</li><li>SQL</li><li>Data parsing</li><li>Charting</li>
-            </ul>
-            <div class="proj__links">
-              <a class="link" href="#">Case study</a>
-              <a class="link" href="#">Repo</a>
-            </div>
-          </article>
-
-          <article class="proj reveal" data-tags="iot">
-            <div class="proj__top">
-              <h3>Smart home monitoring prototype</h3>
-              <div class="mini">IoT</div>
-            </div>
-            <p class="muted">
-              Temperature/humidity monitoring with alarm triggers and remote control logic through a lightweight dashboard.
-            </p>
-            <ul class="tags">
-              <li>BME280</li><li>Raspberry Pi</li><li>MQTT</li><li>Python</li>
-            </ul>
-            <div class="proj__links">
-              <a class="link" href="#">Case study</a>
-              <a class="link" href="#">Repo</a>
-            </div>
-          </article>
+        <div class="note reveal">
+          Add project images in: <span class="mono">assets/projects/</span>
+          (jpg/png). If you don’t have images yet, I can give you clean placeholder banners.
         </div>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section class="section section--alt" id="experience">
       <div class="container">
         <div class="section__head reveal">
           <h2>Experience</h2>
-          <p class="muted">A short timeline reads very professional.</p>
+          <p class="muted">Keep it concise but specific and technical.</p>
         </div>
 
         <div class="timeline">
           <div class="titem reveal">
-            <div class="titem__title">Engineering Assistant Intern, OSIM</div>
-            <div class="titem__meta">Massage Technology Team</div>
+            <div class="row">
+              <div>
+                <div class="title">Engineering Assistant Intern</div>
+                <div class="muted">OSIM Headquarters · Mechanical Technology Department</div>
+              </div>
+              <div class="right muted">Apr – Aug 2025</div>
+            </div>
             <ul class="list">
-              <li>Validated massage programs through hands-on testing and timing checks.</li>
-              <li>Translated sequences into program logic and supported firmware flashing.</li>
-              <li>Conducted safety and pressure tests and documented outcomes.</li>
+              <li>Assisted in developing massage programs by coding control sequences, flashing firmware, and performing performance and safety tests on products.</li>
+              <li>Developed a deeper understanding of the relationship between embedded systems, mechanical performance, and user comfort in consumer health products.</li>
             </ul>
           </div>
 
           <div class="titem reveal">
-            <div class="titem__title">Project work, Computer Engineering</div>
-            <div class="titem__meta">IoT, automation, dashboards</div>
+            <div class="row">
+              <div>
+                <div class="title">Award</div>
+                <div class="muted">Temasek Polytechnic · School of Engineering</div>
+              </div>
+              <div class="right muted">2024</div>
+            </div>
             <ul class="list">
-              <li>Built prototypes combining sensors, data storage, and dashboards.</li>
-              <li>Automated repeated data tasks with structured VBA workflows.</li>
+              <li>Director’s List Award (School of Engineering).</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="container">
         <div class="section__head reveal">
           <h2>Contact</h2>
-          <p class="muted">
-            Add LinkedIn and GitHub here. You can also enable a simple message form using Formspree later.
-          </p>
+          <p class="muted">Simple and direct. You can hide phone number if you prefer.</p>
         </div>
 
         <div class="contact">
           <div class="contact__card reveal">
             <div class="contact__row">
               <div class="contact__label">Email</div>
-              <div class="contact__value" id="emailText">your.email@example.com</div>
+              <div class="contact__value" id="emailText">swamhtetwintyee@gmail.com</div>
+            </div>
+            <div class="contact__row">
+              <div class="contact__label">Phone</div>
+              <div class="contact__value">+65 91863811</div>
             </div>
             <div class="contact__actions">
-              <a class="btn btn--primary" href="mailto:your.email@example.com">Email me</a>
+              <a class="btn btn--primary" href="mailto:swamhtetwintyee@gmail.com">Email me</a>
               <button class="btn" id="copyEmail">Copy email</button>
             </div>
-            <p class="muted tiny">
-              Tip: if you don’t want your email public, remove the email row and keep only LinkedIn.
-            </p>
           </div>
 
           <div class="contact__card reveal">
             <div class="contact__row">
-              <div class="contact__label">Links</div>
+              <div class="contact__label">LinkedIn</div>
               <div class="contact__value">
-                <a class="link" href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noreferrer">LinkedIn</a>
-                <span class="sep" aria-hidden="true">•</span>
-                <a class="link" href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="link" href="https://www.linkedin.com/in/swam-htet-wint-yee-66b14a299/" target="_blank" rel="noreferrer">
+                  Open profile
+                </a>
               </div>
             </div>
 
@@ -312,14 +328,14 @@
             </div>
 
             <div class="contact__row">
-              <div class="contact__label">Status</div>
-              <div class="contact__value">Open to opportunities</div>
+              <div class="contact__label">References</div>
+              <div class="contact__value">Available upon request</div>
             </div>
           </div>
         </div>
 
         <footer class="footer">
-          <div class="muted tiny">© <span id="year"></span> Your Name. Built with GitHub Pages.</div>
+          <div class="muted tiny">© <span id="year"></span> Swam Htet Wint Yee. Built with GitHub Pages.</div>
         </footer>
       </div>
     </section>
@@ -328,4 +344,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-

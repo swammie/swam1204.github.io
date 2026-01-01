@@ -1,87 +1,145 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Swam</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Projects by Swam Htet Wint Yee." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="topbar">
-  <div class="container topbar__row">
-    <a class="brand" href="index.html"><span class="brand__dot"></span><span class="brand__text">Swam</span></a>
-    <button class="navbtn" id="navbtn" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
-      <span class="navbtn__line"></span><span class="navbtn__line"></span><span class="navbtn__line"></span>
-    </button>
-    <nav class="nav" id="nav">
-      <a class="nav__link" href="index.html">Home</a>
-      <a class="nav__link" href="education.html">Education</a>
-      <a class="nav__link" href="skills.html">Skills</a>
-      <a class="nav__link is-active" href="projects.html">Projects</a>
-      <a class="nav__link" href="experience.html">Experience</a>
-      <a class="nav__link" href="contact.html">Contact</a>
-    </nav>
+  <div class="shell">
+    <div class="frame">
+      <header class="topline">
+        <div class="brand">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="name">Swam</span>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="../index.html">Home</a>
+<a href="education.html">Education</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="experience.html">Experience</a>
+<a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="actions">
+          <a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 23.5h4V7.98h-4V23.5ZM8.5 7.98h3.8v2.12h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.07v9.38h-4v-8.31c0-1.98-.04-4.52-2.76-4.52-2.76 0-3.18 2.16-3.18 4.39v8.44h-4V7.98Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a class="btn" href="../assets/resume.pdf" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm8 1.5V8h4.5L14 3.5ZM7 12h10v2H7v-2Zm0 4h10v2H7v-2Zm0-8h6v2H7V8Z"/></svg>
+            <span>Resume</span>
+          </a>
+        </div>
+      </header>
+
+      <main id="main">
+        
+<section class="page-hero">
+  <div class="capsule">
+    <div class="kicker">Selected work</div>
+    <div class="title">Projects</div>
   </div>
-</header>
+  <p class="sub">Projects that combine hardware, software, and data. Replace the placeholder images with your own screenshots.</p>
+</section>
 
-<main class="page">
-  <div class="container">
-    <h2 class="sectionTitle">Projects</h2>
-
-    <div class="card card--white project">
-      <img src="assets/projects/ic-tester.jpg" alt="IC Tester Monitoring System screenshot"/>
-      <div class="card__pad">
-        <h3>Integrated Circuit (IC) Tester Monitoring System</h3>
-        <div class="tags">IoT · MQTT · HMI</div>
-        <p>
-          Designed and implemented a temperature monitoring system for an automated IC tester machine, integrating sensor circuits,
-          signal conditioning, and fan control. Developed an MQTT-enabled HMI to display real-time temperature, fan status, and alarm events.
-        </p>
-        <div class="links">
-          <a class="link" href="#" target="_blank" rel="noreferrer">Repo (add link)</a>
+<section class="section">
+  <div class="project-block">
+    <div class="inner">
+      <div class="left">
+        <h3>Smart Aqua<br/>Grow</h3>
+        <p>A monitoring and AI pipeline that turns sensor data and plant images into a dashboard, readiness signals, and alerts.</p>
+        <div class="meta" style="margin-top:10px;">
+          <span>ESP32-CAM</span><span>IoT</span><span>Python</span><span>PHP/MySQL</span>
+        </div>
+        <div class="imgs">
+          <img src="../assets/img/proj_smart_aqua.svg" alt="Smart Aqua Grow screenshot" />
         </div>
       </div>
-    </div>
-
-    <div style="height:14px"></div>
-
-    <div class="card card--white project">
-      <img src="assets/projects/recipe.jpg" alt="Recipe Sharing Platform screenshot"/>
-      <div class="card__pad">
-        <h3>Recipe Sharing Platform</h3>
-        <div class="tags">HTML · CSS · JavaScript</div>
-        <p>
-          Developed a recipe-sharing website enabling users to browse, share, and save recipes with an interactive and responsive UI.
-          Implemented user-friendly navigation to improve accessibility and engagement.
-        </p>
-        <div class="links">
-          <a class="link" href="#" target="_blank" rel="noreferrer">Live (add link)</a>
-          <a class="link" href="#" target="_blank" rel="noreferrer">Repo (add link)</a>
-        </div>
+      <div class="right">
+        <img src="../assets/img/proj_smart_aqua.svg" alt="Smart Aqua Grow screenshot" />
       </div>
     </div>
-
-    <div style="height:14px"></div>
-
-    <div class="card card--white project">
-      <img src="assets/projects/traffic.jpg" alt="Traffic Light System screenshot"/>
-      <div class="card__pad">
-        <h3>Traffic Light System</h3>
-        <div class="tags">C · Microcontroller</div>
-        <p>
-          Designed and programmed a traffic light system using C to create traffic scenarios and strengthen understanding of microcontroller-based systems.
-        </p>
-        <div class="links">
-          <a class="link" href="#" target="_blank" rel="noreferrer">Repo (add link)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">© <span id="year"></span> Swam Htet Wint Yee</div>
   </div>
-</main>
 
-<script src="script.js"></script>
+  <div style="height:16px;"></div>
+
+  <div class="project-block alt">
+    <div class="inner">
+      <div class="left">
+        <h3>Integrated<br/>IC Tester<br/>Monitoring</h3>
+        <p>Designed and implemented a temperature monitoring system for an automated IC tester, integrating sensor circuits, signal conditioning, fan control, and an MQTT-enabled HMI for real-time temperature and alarm events.</p>
+        <div class="meta" style="margin-top:10px;">
+          <span>MQTT</span><span>Sensor circuits</span><span>HMI</span><span>Reliability</span>
+        </div>
+        <div class="imgs">
+          <img src="../assets/img/proj_ic_tester.svg" alt="IC Tester project screenshot" />
+        </div>
+      </div>
+      <div class="right">
+        <img src="../assets/img/proj_ic_tester.svg" alt="IC Tester project screenshot" />
+      </div>
+    </div>
+  </div>
+
+  <div style="height:16px;"></div>
+
+  <div class="project-block">
+    <div class="inner">
+      <div class="left">
+        <h3>Recipe<br/>Sharing<br/>Platform</h3>
+        <p>Developed a recipe-sharing website using JavaScript, HTML, and CSS, enabling users to browse, share, and save recipes with an interactive and responsive UI.</p>
+        <div class="meta" style="margin-top:10px;">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI</span>
+        </div>
+        <div class="imgs">
+          <img src="../assets/img/proj_recipe.svg" alt="Recipe platform screenshot" />
+        </div>
+      </div>
+      <div class="right">
+        <img src="../assets/img/proj_recipe.svg" alt="Recipe platform screenshot" />
+      </div>
+    </div>
+  </div>
+
+  <div style="height:16px;"></div>
+
+  <div class="project-block alt">
+    <div class="inner">
+      <div class="left">
+        <h3>Excel VBA<br/>Tool Data<br/>Automation</h3>
+        <p>Built Excel VBA macros to extract tool dump parameters, generate formatted outputs, and create charts for analysis. Focused on reliable parsing, formatting, and repeatable workflows.</p>
+        <div class="meta" style="margin-top:10px;">
+          <span>Excel VBA</span><span>Automation</span><span>Charts</span><span>Parsing</span>
+        </div>
+        <div class="imgs">
+          <img src="../assets/img/proj_vba.svg" alt="VBA automation screenshot" />
+        </div>
+      </div>
+      <div class="right">
+        <img src="../assets/img/proj_vba.svg" alt="VBA automation screenshot" />
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+
+      <footer class="footer">
+        © 2026 Swam Htet Wint Yee. Built with HTML/CSS and hosted on GitHub Pages.
+      </footer>
+    </div>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

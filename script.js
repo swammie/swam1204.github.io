@@ -16,54 +16,13 @@
     });
   }
 
-  const themeSelect = document.getElementById("themeSelect");
-  const savedTheme = localStorage.getItem("theme") || "lilac";
-  document.documentElement.setAttribute("data-theme", savedTheme);
-  if (themeSelect) themeSelect.value = savedTheme;
-
-  if (themeSelect) {
-    themeSelect.addEventListener("change", () => {
-      const val = themeSelect.value;
-      document.documentElement.setAttribute("data-theme", val);
-      localStorage.setItem("theme", val);
-    });
-  }
-
-  // Reveal on scroll
   const reveals = document.querySelectorAll(".reveal");
   const io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) e.target.classList.add("is-in");
-      });
-    },
+    (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("is-in")),
     { threshold: 0.12 }
   );
   reveals.forEach((el) => io.observe(el));
 
-  // Scrollspy
-  const sections = ["education", "skills", "projects", "experience", "contact"]
-    .map((id) => document.getElementById(id))
-    .filter(Boolean);
-
-  const navLinks = Array.from(document.querySelectorAll(".nav__link"));
-
-  const spy = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const id = entry.target.getAttribute("id");
-        navLinks.forEach((a) => {
-          a.classList.toggle("is-active", a.getAttribute("href") === "#" + id);
-        });
-      });
-    },
-    { rootMargin: "-45% 0px -50% 0px", threshold: 0.01 }
-  );
-
-  sections.forEach((sec) => spy.observe(sec));
-
-  // Copy email
   const copyBtn = document.getElementById("copyEmail");
   const emailText = document.getElementById("emailText");
   if (copyBtn && emailText) {
